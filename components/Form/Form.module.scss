@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	position: relative;
+
+	input {
+		padding: 8px;
+		font-size: 16px;
+
+		&.invalid {
+			border: 1px solid red;
+		}
+	}
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.honey {
+	display: none;
+}
+
+.loading {
+	position: absolute;
+	inset: 0 0 0 0;
+	background-color: rgba(var(--light-color-rgb), .9);
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
